@@ -1,0 +1,44 @@
+/**
+ * This Partial is for the Navigation Component.
+ * Author: Tristan Elliott - https://tristanelliott.co.za
+ */
+/* Main Navigation Element */
+.navigation { @apply flex justify-between items-center shadow-xl }
+
+/* Navigation Brand Container */
+.navigation-brand { @apply inline-block px-8 py-3 }
+  /* Navigation Brand Link */
+  .navigation-brand a { @apply inline-block font-light text-gray-700 }
+  .navigation-brand a:hover { @apply text-gray-600 }
+
+/* Menu Container */
+.navigation-container { @apply inline-block px-8 py-3 }
+  /* Menu Link */
+  .navigation-container a { @apply inline-block px-2 font-light text-gray-700 }
+    /* Menu Link States */
+    .navigation-container a:hover { @apply text-gray-500 }
+    .navigation-container a:focus { @apply text-gray-600 }
+    .navigation-container a:active { @apply text-blue-600 }
+
+/**
+ * Authentication Dropdown
+ * Author: Tristan Elliott
+ */
+
+/* Trigger Button */
+.auth-dropdown-button { @apply flex items-center font-light text-gray-700 }
+.auth-dropdown-button:focus { @apply outline-none }
+  /* Trigger Button Text & Icon */
+  .auth-dropdown-button > .button-text { @apply inline-block pr-3 }
+  .auth-dropdown-button > .button-indicator { @apply inline-block text-gray-500 }
+
+
+/* Dropdown Menu Content */
+.auth-dropdown-content { @apply absolute right-0 w-48 shadow-xl bg-white }
+
+/* Dropdown Menu Links with states of ( Hover, Focus, Active ) */
+.auth-dropdown-content a { @apply block py-2 px-3 font-light text-gray-700 }
+  /* Link Different States ( Hover, Active, Focus ) */
+  .auth-dropdown-content a:hover { @apply text-gray-600 }
+  .auth-dropdown-content a:focus { @apply text-blue-600 }
+  .auth-dropdown-content a:active { @apply text-gray-400 }
